@@ -1,21 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
-// import Titolo from './components/Titolo';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Homepage from './pages/Homepage';
-
-// function App() {
-
-//   // return (
-//   //   // <Titolo></Titolo>
-//   // );
-// }
-
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import HomePage from './pages/Home';
+import SecondPage from './pages/SecondPage';
 const router = createBrowserRouter([
-  {path:'/', element:<Homepage/>}
+{path:'/', element:<HomePage/>},
+{path:'/second', element:<SecondPage/>}
 ]);
-
-export default function App(){
-  return <RouterProvider router={router}/>;
+export default function App() {
+return <RouterProvider router={router} />;
 }
+
