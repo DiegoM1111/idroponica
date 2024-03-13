@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// import Titolo from './components/Titolo';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Homepage from './pages/Homepage';
 
-export default App;
+// function App() {
+
+//   // return (
+//   //   // <Titolo></Titolo>
+//   // );
+// }
+
+const router = createBrowserRouter([
+  {path:'/', element:<Homepage/>}
+]);
+
+export default function App(){
+  return <RouterProvider router={router}/>;
+}
