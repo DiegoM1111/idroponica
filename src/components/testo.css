@@ -1,0 +1,15 @@
+body{
+    background-color: white;
+}
+h1{
+    font-weight: bold;
+}
+div{
+    width: 544px;
+}
+p{
+    padding: 5px;
+    background-color: green;
+    color: black;
+    border-radius: 10px;
+}
