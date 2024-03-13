@@ -1,0 +1,13 @@
+h1{
+    background-color: green;
+}
+
+#img{
+    width: 283px;
+    display: flex;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none; 
+}
