@@ -10,7 +10,7 @@ function Titolo() {
             <div id="imgIdroponica">
                 <img id="img" src={imgIdroponica} alt="idroponica"/>
             </div>
-            <a href="https://it.wikipedia.org/wiki/Idroponica"> Pagina Wikipedia sull'idroponica</a>
+            <a href="https://it.wikipedia.org/wiki/Idroponica" target='_blank'> Pagina Wikipedia sull'idroponica</a>
         </div>
     );
 }
